@@ -14,8 +14,8 @@ const app = require("./app");
 // configurations
 //------------------------------------------------------------
 
-const hostname = 'localhost';
-const port = 3000;
+const hostname = 'https://ca3unity.herokuapp.com/';
+const port = process.env.PORT || 3000;
 
 
 //------------------------------------------------------------
