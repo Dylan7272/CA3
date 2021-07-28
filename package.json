@@ -1,9 +1,25 @@
 {
-    "scripts": {
-        "start": "node ./app.js"
-    },
-    "dependencies": {
-        "cors": "^2.8.5",
-        "express": "^4.17.1"
-    }
+  "scripts": {
+    "start": "node ./app.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "pg": "^8.7.1"
+  },
+  "name": "ca3",
+  "description": "-   Create a new repository using this template repository.\r -   Hosting the application with Heroku - [tutorial](https://devcenter.heroku.com/articles/github-integration)\r -   Verify it.",
+  "version": "1.0.0",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dylan7272/CA3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dylan7272/CA3/issues"
+  },
+  "homepage": "https://github.com/Dylan7272/CA3#readme",
+  "devDependencies": {}
 }
