@@ -76,23 +76,27 @@ app.post('/init', function (req, res, next) {
 });
 
 app.post('/register', function (req, res, next) {
-    const email = req.body.email;
-    const password = req.body.password;
+    const email = req.query.email;
+    const password = req.query.password;
 
     return Login.createUser(email, password)
         .then(function () {
+            console.log (email)
+            console.log (password)
             return res.json({ email: email, password: password});
         })
         .catch(next);
 });
 
 app.post('/login', function (req, res, next) {
-    const email = req.body.email;
-    const password = req.body.password;
+    const email = req.query.email;
+    const password = req.query.password;
     console.log(Login);
     return Login.getUser(email, password)
         .then(function () {
             console.log("hi")
+            console.log (email)
+            console.log (password)
             return res.json({
                 email: email,
                 password: password
